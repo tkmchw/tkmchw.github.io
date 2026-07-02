@@ -1,0 +1,123 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2575.7">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;!DOCTYPE html&gt;</p>
+<p class="p1">&lt;html lang="ru"&gt;</p>
+<p class="p1">&lt;head&gt;</p>
+<p class="p1">&lt;meta charset="UTF-8"&gt;</p>
+<p class="p1">&lt;meta name="viewport" content="width=device-width,initial-scale=1.0"&gt;</p>
+<p class="p1">&lt;title&gt;tkmchw&lt;/title&gt;</p>
+<p class="p1">&lt;script src="https://cdn.tailwindcss.com"&gt;&lt;/script&gt;</p>
+<p class="p1">&lt;script src="https://unpkg.com/lucide@latest"&gt;&lt;/script&gt;</p>
+<p class="p1">&lt;link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"&gt;</p>
+<p class="p1">&lt;style&gt;</p>
+<p class="p1">*{margin:0;padding:0;box-sizing:border-box}</p>
+<p class="p1">html{scroll-behavior:smooth}</p>
+<p class="p1">body{font-family:'Inter',sans-serif;overflow-x:hidden;background:#000;color:#fff}</p>
+<p class="p1">#bg{position:fixed;inset:0;z-index:-2}</p>
+<p class="p1">#gt{position:fixed;top:-20%;left:20%;transform:translateX(-50%);width:100vw;height:70vh;background:radial-gradient(ellipse at center,rgba(220,38,38,.12) 0%,transparent 65%);z-index:-1;pointer-events:none;transition:opacity 1.2s}</p>
+<p class="p1">#gb{position:fixed;bottom:-20%;left:50%;transform:translateX(-50%);width:120vw;height:60vh;background:radial-gradient(ellipse at center,rgba(220,38,38,.1) 0%,transparent 70%);z-index:-1;pointer-events:none;transition:opacity 1.2s}</p>
+<p class="p1">#ns{position:fixed;inset:0;z-index:0;pointer-events:none;opacity:.03;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");background-size:256px}</p>
+<p class="p1">#sp{position:fixed;top:0;left:0;height:2px;background:linear-gradient(to right,#dc2626,#ef4444);z-index:100;box-shadow:0 0 8px rgba(220,38,38,.5)}</p>
+<p class="p1">.rv{opacity:0;transform:translateY(40px);transition:opacity .9s cubic-bezier(.16,1,.3,1),transform .9s cubic-bezier(.16,1,.3,1)}</p>
+<p class="p1">.rv.v{opacity:1;transform:translateY(0)}</p>
+<p class="p1">.d1{transition-delay:.1s}.d2{transition-delay:.2s}.d3{transition-delay:.3s}</p>
+<p class="p1">.sb{position:relative;width:72px;height:72px;border-radius:20px;display:flex;align-items:center;justify-content:center;background:rgba(220,38,38,.08);border:1px solid rgba(220,38,38,.2);cursor:pointer;transition:all .5s cubic-bezier(.16,1,.3,1);text-decoration:none}</p>
+<p class="p1">.sb::before{content:'';position:absolute;inset:-2px;border-radius:22px;background:radial-gradient(circle,rgba(220,38,38,.4),transparent 70%);opacity:0;transition:opacity .5s;z-index:-1;filter:blur(12px)}</p>
+<p class="p1">.sb:hover{transform:translateY(-4px) scale(1.08);background:rgba(220,38,38,.15);border-color:rgba(220,38,38,.5);box-shadow:0 8px 32px rgba(220,38,38,.25)}</p>
+<p class="p1">.sb:hover::before{opacity:1}</p>
+<p class="p1">.sb svg{color:rgba(255,255,255,.7);transition:color .4s;width:28px;height:28px}</p>
+<p class="p1">.sb:hover svg{color:#fff}</p>
+<p class="p1">.sb.lm{background:rgba(220,38,38,.06);border-color:rgba(220,38,38,.15)}</p>
+<p class="p1">.sb.lm svg{color:rgba(0,0,0,.6)}</p>
+<p class="p1">.sb.lm:hover{background:rgba(220,38,38,.12);border-color:rgba(220,38,38,.4);box-shadow:0 8px 32px rgba(220,38,38,.15)}</p>
+<p class="p1">.sb.lm:hover svg{color:#000}</p>
+<p class="p1">@keyframes fl{0%,100%{transform:translateY(0)}50%{transform:translateY(8px)}}</p>
+<p class="p1">.si{animation:fl 2s ease-in-out infinite}</p>
+<p class="p1">@keyframes pd{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.5;transform:scale(1.5)}}</p>
+<p class="p1">.pd{animation:pd 2s ease-in-out infinite}</p>
+<p class="p1">.sc{background:rgba(220,38,38,.05);border:1px solid rgba(220,38,38,.1);border-radius:24px;padding:32px;transition:all .5s cubic-bezier(.16,1,.3,1)}</p>
+<p class="p1">.sc:hover{background:rgba(220,38,38,.1);border-color:rgba(220,38,38,.25);transform:translateY(-2px)}</p>
+<p class="p1">.dt{transition:color .6s}</p>
+<p class="p1">.ds{transition:color .6s}</p>
+<p class="p1">.dv{width:48px;height:2px;background:rgba(220,38,38,.4);border-radius:1px;transition:background .6s}</p>
+<p class="p1">.hl{position:absolute;left:0;top:0;width:1px;height:100%;background:linear-gradient(to bottom,transparent,rgba(220,38,38,.2) 30%,rgba(220,38,38,.2) 70%,transparent)}</p>
+<p class="p1">::-webkit-scrollbar{width:4px}::-webkit-scrollbar-track{background:transparent}::-webkit-scrollbar-thumb{background:rgba(220,38,38,.3);border-radius:2px}</p>
+<p class="p1">&lt;/style&gt;</p>
+<p class="p1">&lt;/head&gt;</p>
+<p class="p1">&lt;body&gt;</p>
+<p class="p1">&lt;div id="bg"&gt;&lt;/div&gt;&lt;div id="gt"&gt;&lt;/div&gt;&lt;div id="gb"&gt;&lt;/div&gt;&lt;div id="ns"&gt;&lt;/div&gt;&lt;div id="sp"&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;section class="relative min-h-screen flex items-center px-6 md:px-12 lg:px-24 z-10"&gt;</p>
+<p class="p1">&lt;div class="hl"&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;div class="max-w-3xl"&gt;</p>
+<p class="p1">&lt;div class="rv flex items-center gap-2.5 mb-8"&gt;&lt;span class="pd w-2 h-2 rounded-full bg-red-500 inline-block"&gt;&lt;/span&gt;&lt;span class="ds text-[11px] font-medium tracking-[0.2em] uppercase" style="color:rgba(255,255,255,.4)"&gt;Доступен для связи&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;h1 class="rv d1 dt text-6xl md:text-8xl lg:text-[9rem] font-bold tracking-tighter leading-[0.85]" style="color:#fff"&gt;tkmchw&lt;/h1&gt;</p>
+<p class="p1">&lt;p class="rv d2 ds mt-8 text-base md:text-lg font-light max-w-md leading-relaxed" style="color:rgba(255,255,255,.4)"&gt;Делаю крутые вещи в интернете.&lt;br&gt;Просто прокрути вниз.&lt;/p&gt;</p>
+<p class="p1">&lt;div class="rv d3 si mt-16 flex items-center gap-3"&gt;&lt;div class="w-[1px] h-12 bg-gradient-to-b from-red-500/40 to-transparent"&gt;&lt;/div&gt;&lt;span class="ds text-[10px] tracking-[0.25em] uppercase" style="color:rgba(255,255,255,.2)"&gt;Скролл&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/section&gt;</p>
+<p class="p1">&lt;section class="relative z-10 py-32 px-6"&gt;</p>
+<p class="p1">&lt;div class="max-w-2xl mx-auto"&gt;</p>
+<p class="p1">&lt;div class="rv dv mb-8"&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;h2 class="rv d1 dt text-3xl md:text-5xl font-bold tracking-tighter mb-6" style="color:#fff"&gt;Немного&lt;br&gt;о себе&lt;/h2&gt;</p>
+<p class="p1">&lt;p class="rv d2 ds text-base md:text-lg font-light leading-relaxed" style="color:rgba(255,255,255,.5)"&gt;Я — креативный человек, который любит создавать что-то своё. Здесь собраны все мои соцсети в одном месте, чтобы тебе не пришлось искать. Просто кликни на иконку — и ты там.&lt;/p&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/section&gt;</p>
+<p class="p1">&lt;section class="relative z-10 py-24 px-6"&gt;</p>
+<p class="p1">&lt;div class="max-w-4xl mx-auto"&gt;</p>
+<p class="p1">&lt;div class="rv dv mb-8"&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;h2 class="rv d1 dt text-3xl md:text-5xl font-bold tracking-tighter mb-16" style="color:#fff"&gt;Чем занимаюсь&lt;/h2&gt;</p>
+<p class="p1">&lt;div class="grid grid-cols-1 md:grid-cols-3 gap-5"&gt;</p>
+<p class="p1">&lt;div class="rv d1 sc"&gt;&lt;div class="w-10 h-10 rounded-xl bg-red-500/10 flex items-center justify-center mb-5"&gt;&lt;i data-lucide="code-2" class="w-5 h-5 text-red-500"&gt;&lt;/i&gt;&lt;/div&gt;&lt;h3 class="dt text-lg font-semibold mb-2" style="color:#fff"&gt;Сайты&lt;/h3&gt;&lt;p class="ds text-sm font-light leading-relaxed" style="color:rgba(255,255,255,.4)"&gt;Учусь писать свои собственные сайты — от идеи до рабочего результата&lt;/p&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;div class="rv d2 sc"&gt;&lt;div class="w-10 h-10 rounded-xl bg-red-500/10 flex items-center justify-center mb-5"&gt;&lt;i data-lucide="palette" class="w-5 h-5 text-red-500"&gt;&lt;/i&gt;&lt;/div&gt;&lt;h3 class="dt text-lg font-semibold mb-2" style="color:#fff"&gt;Дизайн&lt;/h3&gt;&lt;p class="ds text-sm font-light leading-relaxed" style="color:rgba(255,255,255,.4)"&gt;Могу предложить интересный дизайн, который выделит твой сайт среди других&lt;/p&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;div class="rv d3 sc"&gt;&lt;div class="w-10 h-10 rounded-xl bg-red-500/10 flex items-center justify-center mb-5"&gt;&lt;i data-lucide="lightbulb" class="w-5 h-5 text-red-500"&gt;&lt;/i&gt;&lt;/div&gt;&lt;h3 class="dt text-lg font-semibold mb-2" style="color:#fff"&gt;Стартапы&lt;/h3&gt;&lt;p class="ds text-sm font-light leading-relaxed" style="color:rgba(255,255,255,.4)"&gt;Предложу интересную идею для твоего стартапа и помогу с его дальнейшим развитием&lt;/p&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/section&gt;</p>
+<p class="p1">&lt;section class="relative z-10 py-32 px-6"&gt;</p>
+<p class="p1">&lt;div class="max-w-2xl mx-auto text-center"&gt;</p>
+<p class="p1">&lt;div class="rv dv mb-8 mx-auto"&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;h2 class="rv d1 dt text-3xl md:text-5xl font-bold tracking-tighter mb-4" style="color:#fff"&gt;Найди меня&lt;/h2&gt;</p>
+<p class="p1">&lt;p class="rv d2 ds text-sm font-light mb-14" style="color:rgba(255,255,255,.4)"&gt;Все ссылки в одном месте&lt;/p&gt;</p>
+<p class="p1">&lt;div class="rv d3 flex flex-wrap justify-center gap-4"&gt;</p>
+<p class="p1">&lt;a href="https://t.me/tkmchw" target="_blank" rel="noopener noreferrer" class="sb" title="Telegram"&gt;&lt;svg viewBox="0 0 24 24" fill="currentColor"&gt;&lt;path d="M11.944 0A12 12 0 000 12a12 12 0 0012 12 12 12 0 0012-12A12 12 0 0012 0a12 12 0 00-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 01.171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/&gt;&lt;/svg&gt;&lt;/a&gt;</p>
+<p class="p1">&lt;a href="https://instagram.com/tkmchw" target="_blank" rel="noopener noreferrer" class="sb" title="Instagram"&gt;&lt;svg viewBox="0 0 24 24" fill="currentColor"&gt;&lt;path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 110 12.324 6.162 6.162 0 010-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 110 2.881 1.44 1.44 0 010-2.881z"/&gt;&lt;/svg&gt;&lt;/a&gt;</p>
+<p class="p1">&lt;a href="https://tiktok.com/@tkmchw" target="_blank" rel="noopener noreferrer" class="sb" title="TikTok"&gt;&lt;svg viewBox="0 0 24 24" fill="currentColor"&gt;&lt;path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/&gt;&lt;/svg&gt;&lt;/a&gt;</p>
+<p class="p1">&lt;a href="https://github.com/tkmchw" target="_blank" rel="noopener noreferrer" class="sb" title="GitHub"&gt;&lt;svg viewBox="0 0 24 24" fill="currentColor"&gt;&lt;path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/&gt;&lt;/svg&gt;&lt;/a&gt;</p>
+<p class="p1">&lt;a href="https://pinterest.com/tkmchw" target="_blank" rel="noopener noreferrer" class="sb" title="Pinterest"&gt;&lt;svg viewBox="0 0 24 24" fill="currentColor"&gt;&lt;path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.162-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738a.36.36 0 01.083.345l-.333 1.36c-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.631-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12.017 24c6.624 0 11.99-5.367 11.99-11.988C24.007 5.367 18.641 0 12.017 0z"/&gt;&lt;/svg&gt;&lt;/a&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/section&gt;</p>
+<p class="p1">&lt;footer class="relative z-10 py-20 px-6 text-center"&gt;</p>
+<p class="p1">&lt;div class="rv dv mb-8 mx-auto"&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;p class="rv ds text-xs font-light tracking-widest uppercase" style="color:rgba(255,255,255,.25)"&gt;© 2026 — tkmchw&lt;/p&gt;</p>
+<p class="p1">&lt;/footer&gt;</p>
+<p class="p1">&lt;script&gt;</p>
+<p class="p1">lucide.createIcons();</p>
+<p class="p1">const bg=document.getElementById('bg'),gt=document.getElementById('gt'),gb=document.getElementById('gb'),sp=document.getElementById('sp'),sbs=document.querySelectorAll('.sb');</p>
+<p class="p1">function lp(a,b,t){return a+(b-a)*t}</p>
+<p class="p1">function gc(s,p){let i=0;for(;i&lt;s.length-1;i++){if(p&lt;=s[i+1].p)break}const a=s[i],b=s[Math.min(i+1,s.length-1)],r=b.p-a.p,t=r&gt;0?(p-a.p)/r:0;if(a.c.length===4)return`rgba(${Math.round(lp(a.c[0],b.c[0],t))},${Math.round(lp(a.c[1],b.c[1],t))},${Math.round(lp(a.c[2],b.c[2],t))},${lp(a.c[3],b.c[3],t).toFixed(2)})`;return`rgb(${Math.round(lp(a.c[0],b.c[0],t))},${Math.round(lp(a.c[1],b.c[1],t))},${Math.round(lp(a.c[2],b.c[2],t))})`}</p>
+<p class="p1">const BS=[{p:0,c:[0,0,0]},{p:.3,c:[15,0,0]},{p:.5,c:[40,2,2]},{p:.7,c:[80,10,10]},{p:.85,c:[160,40,40]},{p:1,c:[245,240,240]}];</p>
+<p class="p1">const TS=[{p:0,c:[255,255,255]},{p:.7,c:[255,255,255]},{p:.85,c:[60,10,10]},{p:1,c:[0,0,0]}];</p>
+<p class="p1">const SS=[{p:0,c:[255,255,255,.45]},{p:.6,c:[255,255,255,.5]},{p:.8,c:[80,20,20,.6]},{p:1,c:[0,0,0,.4]}];</p>
+<p class="p1">function eo(t){return t&lt;.5?4*t*t*t:1-Math.pow(-2*t+2,3)/2}</p>
+<p class="p1">let tk=false;</p>
+<p class="p1">function os(){if(tk)return;tk=true;requestAnimationFrame(()=&gt;{const s=window.scrollY,h=document.documentElement.scrollHeight-window.innerHeight,r=h&gt;0?s/h:0,p=Math.max(0,Math.min(1,r)),e=eo(p);bg.style.background=gc(BS,e);sp.style.width=(p*100)+'%';const o=1-e*.8;gt.style.opacity=o;gb.style.opacity=o*.6;const tc=gc(TS,e),sc=gc(SS,e);document.querySelectorAll('.dt').forEach(el=&gt;el.style.color=tc);document.querySelectorAll('.ds').forEach(el=&gt;el.style.color=sc);const da=lp(.4,.6,e);document.querySelectorAll('.dv').forEach(el=&gt;el.style.background=`rgba(220,38,38,${da.toFixed(2)})`);sbs.forEach(b=&gt;{if(e&gt;.75)b.classList.add('lm');else b.classList.remove('lm')});tk=false})}</p>
+<p class="p1">window.addEventListener('scroll',os,{passive:true});os();</p>
+<p class="p1">const ob=new IntersectionObserver(es=&gt;{es.forEach(e=&gt;{if(e.isIntersecting)e.target.classList.add('v')})},{threshold:.1,rootMargin:'0px 0px -60px 0px'});</p>
+<p class="p1">document.querySelectorAll('.rv').forEach(el=&gt;ob.observe(el));</p>
+<p class="p1">&lt;/script&gt;</p>
+<p class="p1">&lt;/body&gt;</p>
+<p class="p1">&lt;/html&gt;</p>
+</body>
+</html>
